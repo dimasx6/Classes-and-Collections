@@ -1,0 +1,17 @@
+package pnm.ti.classesandcollections
+
+data class OldEvent (
+    val title: String,
+    val description: String? = null,
+    val daypart: String,
+    val durationInMinutes: Int
+)
+
+fun main() {
+    val event = OldEvent(
+        title = "Kotlin study",
+        description = "Commit to studying Kotlin at least 15 minutes per day",
+        daypart = "evening",
+        durationInMinutes = 15)
+    println(event)
+}
